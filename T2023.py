@@ -23,7 +23,7 @@ def T202205():
   plt.xticks([0,0.5,1,1.5,2], xl)
   plt.grid(linestyle=':')
   plt.legend()
-  plt.savefig(cfg.folder + 'T202205.png')
+  plt.savefig(cfg.works + 'T202205.png')
 
   return plt
 
@@ -44,7 +44,7 @@ def T202209():
   xl = ['-$\pi$/2','-$\pi$/4','0','$\pi$/4','$\pi$/2']
   plt.xticks([(i * 0.5 - 1) for i in range(len(xl))], xl)
   plt.grid(linestyle=':')
-  plt.savefig(cfg.folder + 'T202209.png')
+  plt.savefig(cfg.works + 'T202209.png')
 
   return plt
 
@@ -60,7 +60,7 @@ def T202216():
   plt.plot(x2, f2, label='f2')
   plt.legend()
   plt.grid()
-  plt.savefig(cfg.folder + 'T202216.png')
+  plt.savefig(cfg.works + 'T202216.png')
 
   return plt
 
@@ -73,7 +73,7 @@ def T202219():
   plt.xlim(-2,4)
   plt.ylim(-10,2)
   plt.grid()
-  plt.savefig(cfg.folder + 'T202219.png')
+  plt.savefig(cfg.works + 'T202219.png')
 
   return plt
 
@@ -98,7 +98,7 @@ def T202221(arg, n):
     plt.plot(x2, y2)
   plt.xlim([xmin,xmax])
   plt.grid()
-  plt.savefig(cfg.folder + 'T202221-' + str(n) + '.png')
+  plt.savefig(cfg.works + 'T202221-' + str(n) + '.png')
 
   return plt
 

@@ -23,7 +23,7 @@ def M230411():
   plt.xticks([-1,0,1])
   plt.yticks([-1,0,1])
   plt.grid()
-  plt.savefig(cfg.folder + 'M230411.png')
+  plt.savefig(cfg.works + 'M230411.png')
 
   return plt
 
@@ -39,7 +39,7 @@ def M220909():
   plt.plot([0,12],[k,k], '--')
   plt.xlim(x[0],x[-1])
   plt.grid()
-  plt.savefig(cfg.folder + 'M220909.png')
+  plt.savefig(cfg.works + 'M220909.png')
 
   return plt
 
@@ -54,7 +54,7 @@ def M220607():
   plt.xticks([0,0.25,0.5,0.75,1], xl)
   plt.xlim(x[0],x[-1])
   plt.grid()
-  plt.savefig(cfg.folder + 'M220607.png')
+  plt.savefig(cfg.works + 'M220607.png')
 
   return plt
 

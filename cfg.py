@@ -1,1 +1,1 @@
-folder = '../data/'
+works = '../data/'

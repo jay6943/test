@@ -1,7 +1,10 @@
 import time
 import pyfirmata
 
-board = pyfirmata.Arduino('COM5')
+# board = pyfirmata.Arduino('COM5')
+
+# sudo chmod 666 /dev/ttyACM0
+board = pyfirmata.Arduino('/dev/ttyACM0')
 
 while True:
   board.digital[13].write(1)

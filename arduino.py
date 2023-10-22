@@ -2,9 +2,7 @@ import time
 import platform
 import pyfirmata
 
-oss = platform.system()
-
-if oss == 'Windows':
+if platform.system() == 'Windows':
   board = pyfirmata.Arduino('COM5')
 else:
   # sudo chmod 666 /dev/ttyACM0

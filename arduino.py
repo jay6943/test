@@ -1,10 +1,14 @@
 import time
+import platform
 import pyfirmata
 
-# board = pyfirmata.Arduino('COM5')
+oss = platform.system()
 
-# sudo chmod 666 /dev/ttyACM0
-board = pyfirmata.Arduino('/dev/ttyACM0')
+if oss == 'Windows':
+  board = pyfirmata.Arduino('COM5')
+else:
+  # sudo chmod 666 /dev/ttyACM0
+  board = pyfirmata.Arduino('/dev/ttyACM0')
 
 while True:
   board.digital[13].write(1)

@@ -3,7 +3,6 @@ import threading
 
 shared_number = 0
 
-
 def thread_1(number):
   global shared_number
   print('number = ', end=''), print(number)
@@ -11,7 +10,6 @@ def thread_1(number):
   for i in range(number): shared_number += 1
 
   print('end of thread_1', shared_number)
-
 
 def thread_2(number):
   global shared_number
@@ -21,9 +19,7 @@ def thread_2(number):
 
   print('end of thread_2', shared_number)
 
-
 if __name__ == "__main__":
-
   threads = []
 
   start_time = time.time()

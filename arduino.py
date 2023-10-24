@@ -1,4 +1,3 @@
-import time
 import platform
 import pyfirmata
 
@@ -9,8 +8,14 @@ else:
   board = pyfirmata.Arduino('/dev/ttyACM0')
 
 while True:
-  board.digital[13].write(1)
-  time.sleep(1)
+  val = input('입력: 0/1/2?')
 
-  board.digital[13].write(0)
-  time.sleep(1)
+  if val == '0':
+    board.digital[13].write(0)
+
+  elif val == '1':
+    board.digital[13].write(1)
+
+  elif val == '2':
+    board.digital[13].write(0)
+    break

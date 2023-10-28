@@ -8,7 +8,7 @@ else:
   # sudo chmod 666 /dev/ttyACM0
   board = pyfirmata.Arduino('/dev/ttyACM0')
 
-while True:
+for _ in range(5):
   print('On')
   board.digital[12].write(1)
   time.sleep(1)

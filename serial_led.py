@@ -23,4 +23,5 @@ while True:
       val = '0'
       val = val.encode('utf-8')
       ser.write(val)
+      ser.close()
       break

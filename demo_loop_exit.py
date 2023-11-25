@@ -1,6 +1,7 @@
 import keyboard
 import time
 
+
 def loop_exit():
   try:
     while 1:
@@ -28,4 +29,5 @@ def loop_esc():
     print('\b' * 100, end='')
 
 
-if __name__ == '__main__': loop_esc()
+if __name__ == '__main__':
+  loop_esc()
